@@ -1,0 +1,57 @@
+[project]
+name = "ProofOfBuilder"
+description = "Decentralized On-Chain Reputation Engine for the Stacks Ecosystem"
+authors = []
+telemetry = true
+cache_dir = "./.cache"
+requirements = []
+
+[contracts.nft-trait]
+path = "contracts/nft-trait.clar"
+clarity_version = 2
+epoch = 2.5
+
+[contracts.treasury]
+path = "contracts/treasury.clar"
+clarity_version = 2
+epoch = 2.5
+
+[contracts.daily-check-in]
+path = "contracts/daily-check-in.clar"
+clarity_version = 2
+epoch = 2.5
+
+[contracts.proof-of-builder]
+path = "contracts/proof-of-builder.clar"
+clarity_version = 2
+epoch = 2.5
+
+[contracts.builder-sbt]
+path = "contracts/builder-sbt.clar"
+clarity_version = 2
+epoch = 2.5
+
+[contracts.builder-staking]
+path = "contracts/builder-staking.clar"
+clarity_version = 2
+epoch = 2.5
+
+[contracts.project-verifier]
+path = "contracts/project-verifier.clar"
+clarity_version = 2
+epoch = 2.5
+
+[contracts.stx-swap]
+path = "contracts/stx-swap.clar"
+clarity_version = 2
+epoch = 2.5
+
+[contracts.sbtc-escrow]
+path = "contracts/sbtc-escrow.clar"
+clarity_version = 2
+epoch = 2.5
+
+[contracts.builder-bounties]
+path = "contracts/builder-bounties.clar"
+clarity_version = 2
+epoch = 2.5

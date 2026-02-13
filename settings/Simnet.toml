@@ -1,0 +1,10 @@
+[network]
+name = "simnet"
+
+[accounts.deployer]
+mnemonic = "twice particular affair smile piece dough thrive dismiss steak aisle narrow fresh biology current bread grain woman movie buzz indicate abandon oven"
+balance = 100000000000000
+
+[accounts.wallet_1]
+mnemonic = "sell invite acquire kitten bamboo drastic jelly vivid peace spawn twice guilt pave pen trash pretty park cube fragile unaware remain midnight betray rebuild"
+balance = 100000000000000
