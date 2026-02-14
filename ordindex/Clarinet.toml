@@ -1,0 +1,24 @@
+[project]
+name = "ordindex"
+authors = []
+description = "Decentralized Registry for Bitcoin Ordinals on Stacks"
+telemetry = false
+requirements = []
+boot_contracts = ["pox", "costs-v2", "bns"]
+
+[contracts.ordindex]
+path = "contracts/ordindex.clar"
+depends_on = []
+
+[repl]
+costs_version = 2
+parser_version = 2
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
