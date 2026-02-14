@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordindex | Bitcoin Ordinals Registry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #0d0d0d;
+            color: #f5f5f5;
+            font-family: 'Courier New', monospace;
+        }
+
+        .btc-orange {
+            color: #f7931a;
+        }
+
+        .border-btc {
+            border-color: #f7931a;
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col items-center justify-center p-8">
+
+    <div class="w-full max-w-2xl text-center mb-12">
+        <h1 class="text-5xl font-bold mb-4 btc-orange">ORDINDEX</h1>
+        <p class="text-gray-400">The Decentralized Bitcoin Inscription Registry on Stacks</p>
+    </div>
+
+    <main class="w-full max-w-xl space-y-8">
+
+        <div class="border border-btc p-6 rounded bg-gray-900">
+            <h2 class="text-xl mb-4">Verify Ownership</h2>
+            <div class="flex gap-2">
+                <input type="text" class="flex-1 bg-black border border-gray-700 p-2 text-sm"
+                    placeholder="Inscription ID (e.g. 6fb9...)" />
+                <button class="bg-[#f7931a] text-black font-bold px-6 py-2 hover:bg-orange-400">SEARCH</button>
+            </div>
+        </div>
+
+        <div class="border border-gray-800 p-6 rounded bg-gray-900/50">
+            <h2 class="text-xl mb-4">Register New Inscription</h2>
+            <p class="text-sm text-gray-500 mb-4">Link your Bitcoin Ordinal to your Stacks identity.</p>
+            <button class="w-full border border-gray-600 py-3 hover:bg-gray-800 transition">Connect Stacks
+                Wallet</button>
+        </div>
+
+    </main>
+
+    <footer class="mt-20 text-xs text-gray-600">
+        POWERED BY STACKS & BITCOIN
+    </footer>
+
+</body>
+
+</html>

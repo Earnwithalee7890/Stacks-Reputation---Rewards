@@ -1,0 +1,28 @@
+[project]
+name = "paystream"
+authors = []
+description = ""
+telemetry = false
+requirements = []
+boot_contracts = ["pox", "costs-v2", "bns"]
+
+[contracts.paystream]
+path = "contracts/paystream.clar"
+depends_on = []
+
+[contracts.stream-token]
+path = "contracts/stream-token.clar"
+depends_on = []
+
+[repl]
+costs_version = 2
+parser_version = 2
+
+[repl.analysis]
+passes = ["check_checker"]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false

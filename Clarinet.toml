@@ -55,3 +55,18 @@ epoch = 2.5
 path = "contracts/builder-bounties.clar"
 clarity_version = 2
 epoch = 2.5
+
+[contracts.profile-badges-v2]
+path = "contracts/profile-badges-v2.clar"
+clarity_version = 2
+epoch = 2.5
+
+[contracts.community-proposal]
+path = "contracts/community-proposal.clar"
+clarity_version = 2
+epoch = 2.5
+
+[contracts.marketplace-v2]
+path = "contracts/marketplace-v2.clar"
+clarity_version = 2
+epoch = 2.5
