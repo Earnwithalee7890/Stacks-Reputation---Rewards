@@ -209,3 +209,7 @@ MIT License — see [LICENSE](LICENSE) for details.
 **Built for the Stacks Builder Rewards: February 2026** 🚀
 
 *ProofOfBuilder is infrastructure for the Stacks ecosystem. If you're building on Bitcoin L2, your reputation should live on-chain.*
+ 
+ # #   L i v e   D e p l o y m e n t  
+ C o n t r a c t s   a r e   l i v e   o n   S t a c k s   M a i n n e t .  
+ 
