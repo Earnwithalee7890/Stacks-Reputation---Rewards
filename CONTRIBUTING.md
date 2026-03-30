@@ -26,3 +26,5 @@ If you find a bug, please open an issue with a detailed description and steps to
 ## Community
 
 Join our [Discord](https://discord.gg/stacks) to discuss the project!
+
+<!-- Metadata refinement 19 -->
