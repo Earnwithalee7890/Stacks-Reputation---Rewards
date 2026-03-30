@@ -25,3 +25,5 @@ This Code of Conduct applies both within project spaces and in public spaces whe
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances.
+
+<!-- Metadata refinement 21 -->
