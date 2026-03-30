@@ -22,3 +22,5 @@ ProofOfBuilder is a decentralized on-chain reputation engine built on Stacks (Bi
 ### Team:
 - Main Developer: @Earnwithalee7890
 - Event: Stacks Builder Rewards - February 2026
+
+<!-- Metadata refinement 17 -->
