@@ -38,8 +38,8 @@
   )
     (asserts! (> reward u0) ERR_INVALID)
     ;; Fee to treasury
-    (try! (stx-transfer? BOUNTY_FEE tx-sender .ProofOfBuilder-Treasury))
-    (try! (contract-call? .ProofOfBuilder-Treasury record-fee tx-sender BOUNTY_FEE))
+    (try! (stx-transfer? BOUNTY_FEE tx-sender .EarnWithAlee-Treasury))
+    (try! (contract-call? .EarnWithAlee-Treasury record-fee tx-sender BOUNTY_FEE))
     ;; Lock reward
     (try! (stx-transfer? reward tx-sender (as-contract tx-sender)))
     (map-set Bounties id {

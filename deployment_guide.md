@@ -1,6 +1,6 @@
 # Deployment Guide 🚀
 
-> Complete guide to deploying ProofOfBuilder on Stacks Mainnet/Testnet
+> Complete guide to deploying EarnWithAlee on Stacks Mainnet/Testnet
 
 **Tags:** Stacks, Clarity, Bitcoin Layer 2
 

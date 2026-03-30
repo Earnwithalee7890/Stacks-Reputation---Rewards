@@ -41,8 +41,8 @@
   )
     (asserts! (> stx-amount u0) (err u105))
     ;; Fee to treasury
-    (try! (stx-transfer? ESCROW_FEE tx-sender .ProofOfBuilder-Treasury))
-    (try! (contract-call? .ProofOfBuilder-Treasury record-fee tx-sender ESCROW_FEE))
+    (try! (stx-transfer? ESCROW_FEE tx-sender .EarnWithAlee-Treasury))
+    (try! (contract-call? .EarnWithAlee-Treasury record-fee tx-sender ESCROW_FEE))
     ;; Lock STX
     (try! (stx-transfer? stx-amount tx-sender (as-contract tx-sender)))
     (map-set Escrows id {

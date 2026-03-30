@@ -1,4 +1,4 @@
-;; Title: ProofOfBuilder Treasury
+;; Title: EarnWithAlee Treasury
 ;; Description: Central vault collecting all protocol fees and tracking user spend for rewards
 ;; Tags: Stacks, Clarity, Bitcoin Layer 2, DeFi Treasury
 ;; Network: Stacks Mainnet

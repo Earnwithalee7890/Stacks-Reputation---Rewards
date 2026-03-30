@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-Only the latest version of ProofOfBuilder is supported for security updates.
+Only the latest version of EarnWithAlee is supported for security updates.
 
 ## Reporting a Vulnerability
 

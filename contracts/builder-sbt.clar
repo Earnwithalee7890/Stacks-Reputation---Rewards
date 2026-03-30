@@ -23,7 +23,7 @@
     (token-id (+ (var-get last-token-id) u1))
   )
     (asserts! (is-none (map-get? MintedBy tx-sender)) ERR_ALREADY_MINTED)
-    (try! (contract-call? .ProofOfBuilder-Treasury record-fee tx-sender MINT_FEE))
+    (try! (contract-call? .EarnWithAlee-Treasury record-fee tx-sender MINT_FEE))
     (try! (nft-mint? builder-sbt token-id tx-sender))
     (map-set MintedBy tx-sender token-id)
     (var-set last-token-id token-id)

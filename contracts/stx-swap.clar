@@ -40,8 +40,8 @@
   )
     (asserts! (> stx-amount u0) ERR_INSUFFICIENT)
     ;; Listing fee to treasury
-    (try! (stx-transfer? LISTING_FEE tx-sender .ProofOfBuilder-Treasury))
-    (try! (contract-call? .ProofOfBuilder-Treasury record-fee tx-sender LISTING_FEE))
+    (try! (stx-transfer? LISTING_FEE tx-sender .EarnWithAlee-Treasury))
+    (try! (contract-call? .EarnWithAlee-Treasury record-fee tx-sender LISTING_FEE))
     ;; Lock the STX in the contract
     (try! (stx-transfer? stx-amount tx-sender (as-contract tx-sender)))
     (map-set SwapOrders order-id {

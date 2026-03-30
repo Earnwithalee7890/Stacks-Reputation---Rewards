@@ -1,4 +1,4 @@
-;; Test script for ProofOfBuilder
+;; Test script for EarnWithAlee
 ;; Use with `clarinet console`
 
 (contract-call? .proof-of-builder register-builder "test-builder")

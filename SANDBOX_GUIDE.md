@@ -1,6 +1,6 @@
 # Sandbox Interaction Guide 🧪
 
-> Step-by-step guide to testing all ProofOfBuilder contracts in the Hiro Sandbox
+> Step-by-step guide to testing all EarnWithAlee contracts in the Hiro Sandbox
 
 **Tags:** Stacks, Clarity, Bitcoin Layer 2
 

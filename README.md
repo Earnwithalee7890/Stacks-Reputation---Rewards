@@ -1,4 +1,4 @@
-# ProofOfBuilder 🛡️
+# EarnWithAlee 🛡️
 
 > **Decentralized On-Chain Reputation Engine for the Stacks Ecosystem**
 
@@ -17,7 +17,7 @@ In Web3, identifying high-impact builders is fragmented. GitHub activity, on-cha
 
 ## 💡 Solution
 
-**ProofOfBuilder** is a protocol-level reputation engine that:
+**EarnWithAlee** is a protocol-level reputation engine that:
 
 1. **Tracks Daily Activity** — 24h-enforced check-in heartbeat with streak tracking
 2. **Links Identities** — Maps GitHub profiles to Stacks addresses on-chain
@@ -47,7 +47,7 @@ All fees flow into a **consolidated treasury** that tracks spend-per-user, enabl
 
 ```
 ┌──────────────────────────────────────────────────────────────┐
-│                     ProofOfBuilder Protocol                   │
+│                     EarnWithAlee Protocol                   │
 ├──────────┬──────────┬──────────┬──────────┬──────────────────┤
 │  Daily   │ Identity │  Builder │  Builder │   Project        │
 │ Check-In │ Registry │   SBT    │ Staking  │  Verifier        │
@@ -92,8 +92,8 @@ All fees flow into a **consolidated treasury** that tracks spend-per-user, enabl
 
 ```bash
 # Clone the repository
-git clone https://github.com/Earnwithalee7890/ProofOfBuilder.git
-cd ProofOfBuilder
+git clone https://github.com/Earnwithalee7890/EarnWithAlee.git
+cd EarnWithAlee
 
 # Check all contracts compile
 clarinet check
@@ -219,7 +219,7 @@ MIT License — see [LICENSE](LICENSE) for details.
 
 **Built for the Stacks Builder Rewards: February 2026** 🚀
 
-*ProofOfBuilder is infrastructure for the Stacks ecosystem. If you're building on Bitcoin L2, your reputation should live on-chain.*
+*EarnWithAlee is infrastructure for the Stacks ecosystem. If you're building on Bitcoin L2, your reputation should live on-chain.*
 
  
  # #   L i v e   D e p l o y m e n t 

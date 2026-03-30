@@ -1,8 +1,8 @@
 # 🎁 Talent Protocol Submission Details
 
-## Project: ProofOfBuilder 🛡️
+## Project: EarnWithAlee 🛡️
 
-ProofOfBuilder is a decentralized on-chain reputation engine built on Stacks (Bitcoin L2) specifically for the Stacks Builder Rewards event.
+EarnWithAlee is a decentralized on-chain reputation engine built on Stacks (Bitcoin L2) specifically for the Stacks Builder Rewards event.
 
 ### Key Event Focus:
 - **Accessibility**: Removed all STX fees from core reputation actions (Check-in, Registration, SBT Minting) to ensure zero barriers to entry for new builders.

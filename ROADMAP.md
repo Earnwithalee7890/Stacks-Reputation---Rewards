@@ -1,4 +1,4 @@
-# 🗺️ ProofOfBuilder Roadmap
+# 🗺️ EarnWithAlee Roadmap
 
 ## Phase 1: Foundation (Completed)
 - [x] Identity Registry (GitHub ↔ Stacks)

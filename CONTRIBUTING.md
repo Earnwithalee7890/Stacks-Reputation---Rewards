@@ -1,4 +1,4 @@
-# Contributing to ProofOfBuilder 🛡️
+# Contributing to EarnWithAlee 🛡️
 
 We're excited that you're interested in contributing! 🚀
 

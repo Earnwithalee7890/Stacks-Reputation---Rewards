@@ -15,8 +15,8 @@
 ;; @desc Verify a builder's contribution on-chain
 (define-public (verify-builder (builder principal))
   (begin
-    (try! (stx-transfer? VERIFICATION_FEE tx-sender .ProofOfBuilder-Treasury))
-    (try! (contract-call? .ProofOfBuilder-Treasury record-fee tx-sender VERIFICATION_FEE))
+    (try! (stx-transfer? VERIFICATION_FEE tx-sender .EarnWithAlee-Treasury))
+    (try! (contract-call? .EarnWithAlee-Treasury record-fee tx-sender VERIFICATION_FEE))
     (map-set Verifications {project: tx-sender, builder: builder} true)
     (var-set total-verifications (+ (var-get total-verifications) u1))
     (print {action: "verify", project: tx-sender, builder: builder})
