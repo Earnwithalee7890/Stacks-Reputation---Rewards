@@ -9,7 +9,7 @@
 (define-constant ERR_UNAUTHORIZED (err u100))
 (define-constant ERR_ALREADY_REGISTERED (err u101))
 (define-constant ERR_NOT_FOUND (err u404))
-(define-constant REGISTRATION_FEE u50000) ;; 0.05 STX
+(define-constant REGISTRATION_FEE u0) ;; Free registration for Talent Protocol event
 
 (define-map BuilderProfiles
   principal
@@ -27,7 +27,6 @@
 (define-public (register-builder (github-handle (string-ascii 40)))
   (begin
     (asserts! (is-none (map-get? BuilderProfiles tx-sender)) ERR_ALREADY_REGISTERED)
-    (try! (stx-transfer? REGISTRATION_FEE tx-sender .ProofOfBuilder-Treasury))
     (try! (contract-call? .ProofOfBuilder-Treasury record-fee tx-sender REGISTRATION_FEE))
     (map-set BuilderProfiles tx-sender {
       github: github-handle,
