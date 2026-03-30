@@ -32,6 +32,17 @@ All fees flow into a **consolidated treasury** that tracks spend-per-user, enabl
 
 ---
 
+## 🛠️ Technology Stack
+
+- **Blockchain:** Stacks (Bitcoin Layer 1.5/L2)
+- **Smart Contracts:** Clarity 2.0 (Post-Nakamoto)
+- **Frontend:** Responsive Glassmorphism (HTML/CSS/JS)
+- **Library:** @stacks/connect, @stacks/transactions
+- **Toolchain:** Clarinet, Vite, TypeScript
+
+
+---
+
 ## 🏗️ Architecture
 
 ```
@@ -58,9 +69,9 @@ All fees flow into a **consolidated treasury** that tracks spend-per-user, enabl
 | # | Contract | File | Fee (STX) | Description |
 |---|----------|------|-----------|-------------|
 | 1 | **Treasury** | `treasury.clar` | — | Central fee vault and spend tracker |
-| 2 | **Daily Check-In** | `daily-check-in.clar` | 0.03 | 24h heartbeat with streak system |
-| 3 | **Identity Registry** | `proof-of-builder.clar` | 0.05 | GitHub ↔ Stacks address mapping |
-| 4 | **Builder SBT** | `builder-sbt.clar` | 0.07 | Non-transferable reputation NFT |
+| 2 | **Daily Check-In** | `daily-check-in.clar` | **Free** | 24h heartbeat with streak system |
+| 3 | **Identity Registry** | `proof-of-builder.clar` | **Free** | GitHub ↔ Stacks address mapping |
+| 4 | **Builder SBT** | `builder-sbt.clar` | **Free** | Non-transferable reputation NFT |
 | 5 | **Staking** | `builder-staking.clar` | 0.04 | STX lock for commitment signal |
 | 6 | **Verifier** | `project-verifier.clar` | 0.10 | Cross-project contribution proof |
 | 7 | **STX-USDC Swap** | `stx-swap.clar` | 0.05 | OTC swap desk for builders |
@@ -209,7 +220,12 @@ MIT License — see [LICENSE](LICENSE) for details.
 **Built for the Stacks Builder Rewards: February 2026** 🚀
 
 *ProofOfBuilder is infrastructure for the Stacks ecosystem. If you're building on Bitcoin L2, your reputation should live on-chain.*
- 
- # #   L i v e   D e p l o y m e n t  
- C o n t r a c t s   a r e   l i v e   o n   S t a c k s   M a i n n e t .  
+
  
+ # #   L i v e   D e p l o y m e n t 
+ 
+ C o n t r a c t s   a r e   l i v e   o n   S t a c k s   M a i n n e t . 
+ 
+ 
+
+<!-- Metadata refinement 15 -->

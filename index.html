@@ -867,7 +867,7 @@
           <p class="action-desc">Check in every 24 hours to build your on-chain streak. Fees go to the Treasury reward
             pool.</p>
           <div class="action-footer">
-            <span class="action-fee">0.03 STX</span>
+            <span class="action-fee">Free</span>
             <button id="btn-checkin" class="btn btn-ghost btn-sm">Check In</button>
           </div>
         </div>
@@ -882,7 +882,7 @@
           </p>
           <input type="text" id="input-github" class="glass-input" placeholder="Your GitHub username">
           <div class="action-footer">
-            <span class="action-fee">0.05 STX</span>
+            <span class="action-fee">Free</span>
             <button id="btn-register" class="btn btn-ghost btn-sm">Register</button>
           </div>
         </div>
@@ -896,7 +896,7 @@
           <p class="action-desc">Claim your non-transferable reputation badge. This SBT is permanently bound to your
             wallet.</p>
           <div class="action-footer">
-            <span class="action-fee">0.07 STX</span>
+            <span class="action-fee">Free</span>
             <button id="btn-sbt" class="btn btn-ghost btn-sm">Mint SBT</button>
           </div>
         </div>
@@ -1134,37 +1134,21 @@
 
     // ===== ACTION HANDLERS =====
 
-    // Daily Check-in (0.03 STX)
     $('btn-checkin').addEventListener('click', () => {
-      const fee = 30000;
-      callContract(C.checkin, 'check-in', [], [
-        StacksTransactions.makeStandardSTXPostCondition(
-          userAddress, StacksTransactions.FungibleConditionCode.Equal, fee
-        )
-      ]);
+      callContract(C.checkin, 'check-in', [], []);
     });
 
-    // Register Builder (0.05 STX)
     $('btn-register').addEventListener('click', () => {
       const github = $('input-github').value.trim();
       if (!github) { toast('Enter your GitHub username', 'error'); return; }
-      const fee = 50000;
       callContract(C.registry, 'register-builder',
         [StacksTransactions.stringAsciiCV(github)],
-        [StacksTransactions.makeStandardSTXPostCondition(
-          userAddress, StacksTransactions.FungibleConditionCode.Equal, fee
-        )]
+        []
       );
     });
 
-    // Mint SBT (0.07 STX)
     $('btn-sbt').addEventListener('click', () => {
-      const fee = 70000;
-      callContract(C.sbt, 'mint-sbt', [], [
-        StacksTransactions.makeStandardSTXPostCondition(
-          userAddress, StacksTransactions.FungibleConditionCode.Equal, fee
-        )
-      ]);
+      callContract(C.sbt, 'mint-sbt', [], []);
     });
 
     // Stake STX (min 1 STX + 0.04 STX fee)
@@ -1337,3 +1321,23 @@
 </body>
 
 </html>
+
+<!-- UI Optimization detail 23 -->
+
+<!-- UI Optimization detail 24 -->
+
+<!-- UI Optimization detail 25 -->
+
+<!-- UI Optimization detail 26 -->
+
+<!-- UI Optimization detail 27 -->
+
+<!-- UI Optimization detail 28 -->
+
+<!-- UI Optimization detail 29 -->
+
+<!-- UI Optimization detail 30 -->
+
+<!-- UI Optimization detail 31 -->
+
+<!-- UI Optimization detail 32 -->

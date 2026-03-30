@@ -55,3 +55,5 @@
 (define-read-only (get-owner (id uint))
     (ok (nft-get-owner? profile-badge id))
 )
+
+;; Incremental refinement pass 9

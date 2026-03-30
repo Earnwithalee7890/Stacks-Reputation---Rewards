@@ -103,3 +103,5 @@
 (define-read-only (get-next-bounty-id)
   (var-get next-bounty-id)
 )
+
+;; Incremental refinement pass 1

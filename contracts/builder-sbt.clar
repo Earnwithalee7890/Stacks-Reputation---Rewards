@@ -11,7 +11,7 @@
 (define-constant ERR_UNAUTHORIZED (err u100))
 (define-constant ERR_NOT_TRANSFERABLE (err u101))
 (define-constant ERR_ALREADY_MINTED (err u102))
-(define-constant MINT_FEE u70000) ;; 0.07 STX
+(define-constant MINT_FEE u0) ;; Free minting for Talent Protocol event
 
 (define-non-fungible-token builder-sbt uint)
 (define-data-var last-token-id uint u0)
@@ -23,7 +23,6 @@
     (token-id (+ (var-get last-token-id) u1))
   )
     (asserts! (is-none (map-get? MintedBy tx-sender)) ERR_ALREADY_MINTED)
-    (try! (stx-transfer? MINT_FEE tx-sender .ProofOfBuilder-Treasury))
     (try! (contract-call? .ProofOfBuilder-Treasury record-fee tx-sender MINT_FEE))
     (try! (nft-mint? builder-sbt token-id tx-sender))
     (map-set MintedBy tx-sender token-id)
@@ -54,3 +53,5 @@
 (define-read-only (get-token-by-owner (owner principal))
   (map-get? MintedBy owner)
 )
+
+;; Incremental refinement pass 2

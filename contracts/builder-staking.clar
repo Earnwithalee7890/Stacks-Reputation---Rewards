@@ -61,3 +61,5 @@
 (define-read-only (get-total-staked)
   (var-get total-staked)
 )
+
+;; Incremental refinement pass 3

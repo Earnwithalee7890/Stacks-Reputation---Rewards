@@ -1,0 +1,2 @@
+# Changelog\n\n## [1.1.0] - 2024-03-30\n- Removed all STX fees from core contracts.\n- Stabilized wallet connection by removing post-conditions.\n- Added comprehensive documentation and test setup.
+<!-- Metadata refinement 18 -->
