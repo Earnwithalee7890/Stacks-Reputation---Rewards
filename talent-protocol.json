@@ -1,0 +1,18 @@
+{
+  "name": "EarnWithAlee",
+  "description": "A decentralized reputation engine on Stacks for builders.",
+  "event": "Stacks Builder Rewards April 2026",
+  "verification_tag": "081a3719b768547de8608f4bcab2b837f7e71c66d1a40294a08672103e88d724c711c3fba6345ccb96fd414e482ebfb8328e711becf16653474568f947f518f7",
+  "contracts": [
+    "proof-of-builder",
+    "daily-check-in",
+    "builder-sbt",
+    "treasury",
+    "event-logger"
+  ],
+  "socials": {
+    "twitter": "https://twitter.com/Earnwithalee7890",
+    "github": "https://github.com/Earnwithalee7890/Stacks-Reputation-Rewards"
+  },
+  "version": "1.1.0"
+}
