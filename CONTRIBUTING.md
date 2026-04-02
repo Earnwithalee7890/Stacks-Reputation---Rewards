@@ -16,7 +16,8 @@ We're excited that you're interested in contributing! 🚀
 ## Development Guidelines
 
 - **Smart Contracts:** Ensure all Clarity contracts pass `clarinet check`.
-- **Documentation:** Update the README for any new features.
+- **Reputation-First:** All new feature contracts should implement `event-logger-trait` if they involve user activity.
+- **Documentation:** Any change affecting the Talent Protocol integration must be reflected in `TALENT_PROTOCOL.md`.
 - **Frontend:** Follow the glassmorphism design system in `index.html`.
 
 ## Reporting Issues
