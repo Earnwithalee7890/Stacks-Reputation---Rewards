@@ -35,6 +35,10 @@
       verified: false
     })
     (var-set total-builders (+ (var-get total-builders) u1))
+    
+    ;; [Talent Protocol Event Log]
+    (try! (contract-call? .event-logger log-event "builder-registered" tx-sender github-handle))
+    
     (print {action: "register", user: tx-sender, github: github-handle})
     (ok true)
   )
