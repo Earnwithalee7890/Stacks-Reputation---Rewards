@@ -27,6 +27,10 @@
     (try! (nft-mint? builder-sbt token-id tx-sender))
     (map-set MintedBy tx-sender token-id)
     (var-set last-token-id token-id)
+    
+    ;; [Talent Protocol Event Log]
+    (try! (contract-call? .event-logger log-event "sbt-minted" tx-sender "token-minted-successfully"))
+    
     (print {action: "mint-sbt", user: tx-sender, token-id: token-id})
     (ok token-id)
   )
