@@ -33,6 +33,10 @@
     )
     (map-set LastCheckIn tx-sender stacks-block-height)
     (map-set CheckInCount tx-sender (+ current-count u1))
+    
+    ;; [Talent Protocol Event Log]
+    (try! (contract-call? .event-logger log-event "daily-check-in" tx-sender "streak-updated"))
+    
     (print {action: "check-in", user: tx-sender, block: stacks-block-height, count: (+ current-count u1), streak: (+ current-streak u1)})
     (ok true)
   )
